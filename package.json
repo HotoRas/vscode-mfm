@@ -1,0 +1,25 @@
+{
+  "name": "mfm-highlighter",
+  "displayName": "MFM Syntax Highlighter",
+  "description": "Syntax Highlighter for MFM (Markup for Misskey)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mfm",
+      "aliases": ["MFM", "mfm"],
+      "extensions": [".mfm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mfm",
+      "scopeName": "source.mfm",
+      "path": "./syntaxes/mfm.tmLanguage.json"
+    }]
+  }
+}
